@@ -1,0 +1,10 @@
+<html>
+ <body>
+    {% for artikel in artikels %}
+       <p>
+         <h2><a href="{%  %}">{{ artikel.judul }}</h2></a> Diposting : {{ artikel.tgl_post|timesince }} yang lalu<br/>
+         {{ artikel.isi }}
+       </p>
+    {% endfor %}
+ </body>
+</html>
